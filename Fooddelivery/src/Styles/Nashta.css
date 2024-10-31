@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px; /* space between grid items */
+    padding: 20px; /* padding around the grid */
+}
+
+.grid-item {
+    width: 345px; /* Width of the card */
+    height: 345px; /* Height of the card */
+    border: 3px solid;
+    background-color: antiquewhite; /* green background */
+    color: white; /* white text */
+    text-align: center; /* center text */
+    padding: 30px; /* padding inside grid items */
+    border: 1px solid #ddd; /* light border */
+    border-radius: 5px; /* rounded corners */
+    display:flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+#relish{
+    font-size: 35px;
+    
+}
+#small{
+    width: 285px; /* Width of the card */
+    height: 285px; /* Height of the card */
+    
+}
+.pricediv {
+    background-color: antiquewhite;
+    width: 345px; /* Width of the card */
+    height: 345px; /* Height of the card */
+    
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Place items at the ends */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Optional: add padding for spacing */
+}
+#rupay{
+    font-size: 25px;
+    margin-left: 45px;
+    
+}
+#order {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    margin-right: 14px;
+}
+
+
+#order:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+#add-to-cart:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+

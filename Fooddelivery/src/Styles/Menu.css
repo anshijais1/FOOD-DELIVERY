@@ -1,0 +1,40 @@
+.divmenu {
+    background-color: rgb(111, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust to fit the entire viewport height */
+}
+.divstarter {
+    position: relative; /* Ensure positioning for overlay */
+    width: 345px; /* Width of the card */
+    height: 345px; /* Height of the card */
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent; /* Background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s ease; 
+    padding: 31px;/* Smooth transition */
+}
+
+.divstarter:hover {
+    transform: scale(0.9); /* Scale up the card on hover */
+    z-index: 1; /* Bring the card to the front */
+}
+
+.overlay {
+    position: absolute; /* Position over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for element size */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Optional: rounded corners for the overlay */
+}
+
